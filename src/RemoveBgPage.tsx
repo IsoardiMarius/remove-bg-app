@@ -25,7 +25,7 @@ const RemoveBgPage: React.FC = () => {
             const response = await axios.post('https://api.remove.bg/v1.0/removebg', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
-                    'X-Api-Key': 'YOUR_API_KEY'
+                    'X-Api-Key': 'erL1KFxjj9dz8GtbT8ULrAmR'
                 },
                 responseType: 'blob',
             });
