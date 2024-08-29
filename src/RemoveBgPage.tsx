@@ -19,14 +19,13 @@ const RemoveBgPage: React.FC = () => {
         setLoading(true);
 
         const formData = new FormData();
-        formData.append('image', image);
+        formData.append('image_file', image);  // Notez 'image_file' comme clé
 
         try {
-            // Ici, vous pouvez remplacer par votre propre API
             const response = await axios.post('https://api.remove.bg/v1.0/removebg', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
-                    'X-Api-Key': 'erL1KFxjj9dz8GtbT8ULrAmR'
+                    'X-Api-Key': 'YOUR_API_KEY'
                 },
                 responseType: 'blob',
             });
@@ -34,12 +33,18 @@ const RemoveBgPage: React.FC = () => {
             const blob = new Blob([response.data]);
             const url = URL.createObjectURL(blob);
             setProcessedImage(url);
-        } catch (error) {
-            console.error('Erreur lors de la suppression de l\'arrière-plan:', error);
+        } catch (error: any) {
+            if (axios.isAxiosError(error)) {
+                console.error('Erreur axios:', error.response?.data);
+            } else {
+                console.error('Erreur:', error.message);
+            }
         }
+
 
         setLoading(false);
     };
+
 
     return (
         <div className="min-h-screen bg-gray-900 text-white flex flex-col justify-center items-center">
