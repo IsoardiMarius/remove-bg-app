@@ -1,46 +1,106 @@
-# Getting Started with Create React App
+# 🎨 Background Remover
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Background Remover is a sleek and intuitive web application that allows you to effortlessly remove the background from any image. Simply upload an image, and our tool will do the rest, providing you with a clean, transparent image ready for any creative project.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Upload and Preview**: Easily upload your image and preview it before processing.
+- **Background Removal**: Automatically remove the background from images with just one click.
+- **Download Processed Image**: Download the processed image directly to your device.
+- **Responsive Design**: Fully responsive layout that looks great on all devices.
+- **Modern UI/UX**: A sleek, modern user interface built with React and Material-UI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Screenshots
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![alt text](https://github.com/IsoardiMarius/ou-es-tu-passe/blob/main/screenshot_1.png?raw=true)
+![alt text](https://github.com/IsoardiMarius/ou-es-tu-passe/blob/main/screenshot_2.png?raw=true)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v14 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository**:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/yourusername/background-remover.git
+   cd background-remover
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. **Install dependencies**:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   or
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```bash
+   yarn install
+   ```
 
-## Learn More
+3. **Create a `.env` file**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   REACT_APP_API_KEY=your_remove_bg_api_key
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Run the development server**:
+
+   ```bash
+   npm start
+   ```
+
+   or
+
+   ```bash
+   yarn start
+   ```
+
+## Deployment
+
+To build the project for production, run:
+
+```bash
+npm run build
+```
+
+or
+
+```bash
+yarn build
+```
+
+This will create an optimized production build in the `build` directory.
+
+## Usage
+
+1. Upload your image by dragging and dropping it into the upload area or by clicking the upload button.
+2. Click on "Effacer l'arrière-plan" to remove the background from the image.
+3. Download the processed image using the "Télécharger l'image" button.
+
+## Contributing
+
+If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+1. **Fork the repository**.
+2. **Create your feature branch**: `git checkout -b feature/YourFeature`
+3. **Commit your changes**: `git commit -m 'Add some feature'`
+4. **Push to the branch**: `git push origin feature/YourFeature`
+5. **Submit a pull request**.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Remove.bg API for the background removal functionality.
+- Material-UI for the UI components.
