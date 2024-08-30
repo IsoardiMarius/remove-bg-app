@@ -14,8 +14,8 @@ Background Remover is a sleek and intuitive web application that allows you to e
 
 ## Screenshots
 
-![alt text](https://github.com/IsoardiMarius/ou-es-tu-passe/blob/main/screenshot_1.png?raw=true)
-![alt text](https://github.com/IsoardiMarius/ou-es-tu-passe/blob/main/screenshot_2.png?raw=true)
+![alt text](https://github.com/IsoardiMarius/ou-es-tu-passe/blob/main/src/assets/screenshot_1.png?raw=true)
+![alt text](https://github.com/IsoardiMarius/ou-es-tu-passe/blob/main/src/assets/screenshot_2.png?raw=true)
 
 
 ## Getting Started
